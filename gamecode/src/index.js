@@ -14,7 +14,9 @@ hbs.registerPartials(partials);
 
 app.use(express.static(staticpath));
 
-
+app.get("/",(req,res)=>{
+    res.render("progress");
+})
 
 app.listen(8000,()=>{
     console.log("hello i am at 8000");

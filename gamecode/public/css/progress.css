@@ -1,0 +1,111 @@
+
+*{
+  background-color: black;  
+    color:white;
+}
+    
+
+
+@font-face{
+    font-family: 'pricedow';
+    src:url(pricedow.ttf) format('truetype');
+}
+
+.btn {
+    
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #fff6fb;
+    letter-spacing: 0.3em;
+    text-shadow: -2px 2px 5px  #0962ea;
+    background-color: black;
+    border: 2px solid #FEB1DE;
+    box-shadow: 0 0 0px 1px #0962ea,
+      0 0 10px 2px #0962ea,
+      inset 0 0 0px 1px #0962ea,
+      inset 0 0 10px 2px #0962ea;
+    transition: 100ms;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 0px 1px #0962ea,
+      0 0 10px 2px #0962ea,
+      inset 0 0 0px 1px #0962ea,
+      inset 0 0 30px 2px #0962ea;
+    text-shadow: 0 0 10px #0962ea;
+    transform: translateY(-5px);
+  }
+  
+  .btn:active {
+    box-shadow: 0 0 0px 1px #0962ea,
+      0 0 25px 2px #0962ea,
+      inset 0 0 0px 1px #0962ea,
+      inset 0 0 30px 2px #0962ea;
+    transform: translateY(1px);
+  }
+
+  .properplace{
+    display: flex;
+    max-width: 100%;
+    padding-left:2rem;
+    align-items: center;
+  }
+
+  .levelplace{
+    display: flex;
+    padding-top: 2rem;
+  }
+
+  .playbutton{
+    padding-left:6rem;
+    max-width: 100%;
+  }
+   
+  .number{
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+  }
+
+  .warriorplace{
+    position:absolute;
+    top:10%;
+    left:75%;
+  }
+
+  .gtafont{
+    font-family: 'pricedow';
+    letter-spacing: 5px;
+  }
+
+  .heading{
+    background-image: linear-gradient(to right, #ff8a00, #be0f4f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-left:20rem;
+  }
+
+  .leveltitle{
+    padding-top:2rem;
+  }
+
+  .cssplay{
+    position:absolute;
+    left:25%;
+    top:160%;
+  }
+
+  .csswarrior{
+    position:absolute;
+    top: 14%;
+    left: -343px;
+  }
+
+  .headingcss{
+    background-image: linear-gradient(to bottom, #ff8a00, #be0f4f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
