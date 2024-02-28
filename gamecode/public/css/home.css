@@ -1,0 +1,402 @@
+/* css reset */
+@font-face{
+    font-family: 'pricedow';
+    src:url(pricedow.ttf) format('truetype');
+}
+*{
+    
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.89;
+    height:100%;
+    width:100%;
+} 
+/* Navigation bar */
+.logo{
+    margin:19px 35px;
+}
+.logo img{
+    height:110px;
+    width:90px;
+    margin:3px 6px;
+    z-index: 10;
+    image-rendering: auto;
+}
+/* .navbar:before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+    height:100%;
+    width:100%;
+} */
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    padding:20px;
+    list-style: none;
+}
+.navbar ul li a{
+    color:white;
+    z-index: 10;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: "Merriweather Sans", sans-serif;
+    color:white;
+    display:block;
+    padding:5px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+
+}
+.separation {
+    height: 3px;
+    background-color: rgb(8, 59, 13);
+  }
+.navbar button{
+    font-size: 1.2;
+        padding: 3px 8px;
+        font-weight: 400;
+        color: white;
+        background-color: rgba(248, 243, 243, 0.021);
+        border-radius: 9px;
+        border: 1px solid white;
+        cursor: pointer;
+        box-shadow: 0 0 10px black;
+        transition: 0.5s;
+}
+.navbar .box #login:hover{
+    border-radius: 12px;
+    color:black;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+.navbar .box #login{
+    color:white;
+    font-size: 1.2rem;
+}
+.navbar .box #signup{
+    font-size: 1.2rem;
+    color:white;
+    background-color: transparent;
+}
+.navbar .box #signup:hover{
+    border-radius: 12px;
+    color:white;
+    background-color: red;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+/* Login page */
+
+#modal{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:450px;
+    height: 500px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    animation-name:anuj;
+    animation-duration: 0.4s;
+    background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Ope */
+
+
+}
+#loginpage{
+    display: none;
+    height:550px;
+    width:500px;
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#formpage img{
+    height:60px;
+    width:120px;
+}
+.heading2{
+    font-family: 'pricedow';
+    color:black;
+    font-size: 3rem;
+}
+.heading3{
+    
+    color:black;
+    font-size: 2rem;
+}
+#modal form{
+    font-size: 1.2rem;
+    margin:30px;
+    padding:34px 23px;
+    color:black
+}
+.email{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bold;
+
+}
+.email input{
+    padding:2px 6px;
+    margin: 2px;
+    height:40px;
+    width:300px;
+    border-radius: 12px;
+    color:black;
+    
+}
+#createaccount{
+    color:black;
+    font-size: 1.1rem;
+}
+.forgot{
+    color:black;
+    
+}
+.forgot input{
+    height: 15px;
+    width:20px;
+}
+#submit{
+    color:white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    background-color: rgba(11, 126, 168, 0.582);
+    box-shadow: 0 0 0 black;
+    transition: 0.5s;
+    height:50px;
+    width:300px;
+}
+#submit:hover{
+    
+    box-shadow: 0 0 0 black;
+    transition:magin 4s;
+    color:#fff;
+    background-color: rgb(61, 61, 198);
+}
+#close-btn{
+    height:50px;
+    width:30px;
+    float:right;
+    font-size: 3rem;
+    color:red;
+}
+#close-btn:hover{
+    height:50px;
+    width:30px;
+    background-color: red;
+    color:white;
+    font-size: 3rem;
+    cursor:pointer;
+}
+@keyframes anuj{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+    to{
+        top:50%;
+        opacity:1;
+    }
+}
+/* signup page */
+.heading4{   
+    color:white;
+    font-size: 2rem;
+}
+#sign img{
+    height:70px;
+    width:160px;
+    margin-top:12px;
+    z-index: 10;
+}
+#signpage{
+    color:white;
+    display: none;
+    height:550px;
+    width:500px;
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#modal2{
+    color:white;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:450px;
+    height: 500px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    animation-name:anuj2;
+    animation-duration: 0.4s;
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#modal2 form{
+    color:white;
+}
+#close-btn2{
+    height:50px;
+    width:30px;
+    float:right;
+    font-size: 3rem;
+    color:red;
+}
+#close-btn2:hover{
+    height:50px;
+    width:30px;
+    background-color: red;
+    color:white;
+    font-size: 3rem;
+    cursor:pointer;
+}
+.email2{
+        color:white;
+        font-size: 1.5rem;
+        font-weight: bold;    
+    }
+.email2 input{
+        padding:2px 6px;
+        margin: 2px;
+        height:40px;
+        width:300px;
+        border-radius: 12px;
+        color:black;
+        
+    }
+    #submit2{
+        color:white;
+        cursor: pointer;
+        font-size: 1.1rem;
+        border-radius: 12px;
+        background-color: rgba(11, 126, 168, 0.582);
+        box-shadow: 0 0 0 black;
+        transition: 0.5s;
+        height:50px;
+        width:300px;
+    }
+    #submit2:hover{
+        
+        box-shadow: 0 0 0 black;
+        transition:magin 4s;
+        color:#fff;
+        background-color: rgb(61, 61, 198);
+    }
+@keyframes anuj2{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+    to{
+        top:50%;
+        opacity:1;
+    }
+}
+
+/* section home */
+#home::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:url('assets/bg1.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.70;
+    height:100vh;
+    width:100%;
+}
+#home{
+    color:white;
+    display:flex;
+    margin:150px;
+    justify-content: center;
+    align-items: center;
+    padding:3px 100px;
+    flex-direction: column;
+}
+.heading1{
+    @font-face{
+        font-family: 'pricedow';
+        src:url(pricedow.ttf) format('truetype');
+    }
+    font-size: 4rem;
+}
+#home p{
+    font-family: "Roboto", sans-serif;
+    margin:20px;
+    padding:12px 23px;
+}
+#register{
+    font-size: 1.2rem;
+    background-color: transparent;
+    font-weight: bolder;
+    font-family: "Merriweather Sans", sans-serif;
+    color:white;
+    border-radius: 12px;
+    padding:10px 15px;
+    cursor:pointer;
+    box-shadow: 0 0 0 2px black;
+}
+#register:hover{
+    color:green;
+    background-color: yellow;
+    box-shadow: 0 0 40px black;
+    transition: 0.5s;
+    border-radius: 20px;
+}
