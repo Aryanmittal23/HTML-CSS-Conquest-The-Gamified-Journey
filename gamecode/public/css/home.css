@@ -355,7 +355,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     position:absolute;
     top:0px;
     left:0px;
-    background:url('assets/bg1.jpg') no-repeat center center/cover;
+    background:url('../image/bg1.jpg') no-repeat center center/cover;
     z-index: -1;
     opacity: 0.70;
     height:100vh;
